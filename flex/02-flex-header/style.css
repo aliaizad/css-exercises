@@ -1,25 +1,48 @@
+body{
+  background-color: papayawhip;
+}
+
 .header  {
+  display: flex;
   font-family: monospace;
   background: papayawhip;
+  justify-content: space-between;
+  align-items: center;
+  border: 6px solid white;
+  flex: auto; 
+  flex-wrap: wrap;
 }
 
 .logo {
-  font-size: 48px;
-  font-weight: 900;
+  font-size: 26px;
+  font-weight: bolder;
   color: tomato;
   background: white;
-  padding: 4px 32px;
+  padding: 4px 20px;
+  margin: 6px 0px;
+}
+
+.left-links,
+.right-links{
+  margin: 0px 5px;
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex;
+  /* margin-left: -40px; makes more sense to remove all the additional padding and margin rather than adjust the error xD */
+  margin: 0;
+  padding: 0;
+  gap: 7px;
 }
 
+
 a {
-  font-size: 22px;
+  font-size: 10px;
+  font-weight: bold;
   background: white;
-  padding: 8px;
+  padding: 4px;
   /* this removes the line under the links */
   text-decoration: none;
 }
